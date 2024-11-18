@@ -1,0 +1,15 @@
+<h1 class="h1">CATEGORIES</h1>
+
+  <div class="container">
+      <div class="row justify-content-start flex-nowrap overflow-auto"> <!-- Flexbox to keep categories in a single row -->
+        <div *ngFor="let category of MoviescategoriesComponent" class="col-md-3">
+          <div class="card mb-4">
+            <img [src]="category.movies[0].poster" class="card-img-top" alt="{{ category.movies[0].title }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ category.movies[0].title }}</h5>
+              <p class="card-text">{{ category.category }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

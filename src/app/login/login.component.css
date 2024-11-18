@@ -1,0 +1,67 @@
+/* Fullscreen background image with blur effect */
+.signup-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg') no-repeat center center/cover;
+    filter: blur(8px); /* Blur effect */
+    z-index: -1; /* Behind the form */
+  }
+  
+  /* Signup form styling */
+  .signup-form-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 85%;
+    margin-top: 50px;
+    max-width: 400px;
+  }
+  
+  .signup-form {
+    padding: 20px;
+    margin-top: -20px;
+  }
+  
+  .signup-form h2 {
+    color: #333;
+  }
+  
+  .signup-form .form-control {
+    border-radius: 5px;
+  }
+  
+  .signup-form .btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .signup-form .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-form a {
+    color: #007bff;
+  }
+  
+  .signup-form a:hover {
+    text-decoration: underline;
+  }
+  

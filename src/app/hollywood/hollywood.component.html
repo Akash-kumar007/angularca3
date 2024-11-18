@@ -1,0 +1,21 @@
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4" *ngFor="let movie of HollywoodComponent">
+        <div class="card" style="width: 250px;">
+          <img [src]="movie.image" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">{{ movie.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ movie.year }}</h6>
+            <div class="ratings mb-2">
+              <ng-container *ngFor="let star of [1,2,3,4,5]">
+                <i class="fas" [ngClass]="{'fa-star': movie.rating >= star, 'fa-star-half-alt': movie.rating === (star - 0.5), 'fa-star-empty': movie.rating < star}"></i>
+              </ng-container>
+            </div>
+            <a [href]="movie.link" target="_blank" class="btn btn-primary btn-sm">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <app-footer></app-footer>

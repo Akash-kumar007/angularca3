@@ -1,0 +1,97 @@
+.h1{
+    background-color:black ;
+    padding: 230px;
+}
+
+.h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:35px ;
+    color: rgb(255, 255, 255);
+    margin-top: -200px;
+    text-align: center;
+
+}
+
+.home{
+    color: rgb(255, 255, 255);
+    font-size:20px ;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: -60px;
+}
+
+.home:hover{
+    color: rgb(255, 196, 87);
+    cursor: pointer;
+}
+
+.about{
+    color: rgb(255, 255, 255);
+    font-size:20px ;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: -33px;
+}
+
+.what{
+    color: rgb(201, 147, 0);
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 200px;
+    font-size:20px ;
+    text-align: center;
+}
+.Services{
+    text-align: center;
+    font-size:50px ;
+    color: rgb(0, 0, 0);
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 60px;
+
+  }
+
+  .column {
+    flex: 1 1 calc(33.333% - 10px);
+    margin: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+  
+  }
+
+  .column h3, .column p {
+    margin: 0;
+    
+  }
+
+  .column p{
+    width: 300px;
+  }
+
+  .column h3{
+    font-size: 21px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .card-img-top{
+    height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+  }
+
+  .card-img-top:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 8px 26px rgba(0, 0, 0, 0.5);
+  }
+
+  .images{
+    width: 430px;
+    height: 300px;
+  }

@@ -1,0 +1,111 @@
+/* Custom navbar background and text color */
+.custom-navbar {
+    background-color: #242424; /* Dark gray for a sleek look */
+    padding:4px; /* Padding to make it more spacious */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    
+  }
+  
+  /* Navbar brand styling */
+  .navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+    text-transform: uppercase; /* Optional uppercase styling */
+    transition: color 0.3s ease;
+    
+  }
+  
+  .navbar-brand:hover {
+    color: #f8f9fa; /* Lighter hover effect */
+  }
+  
+  /* Navbar list styling */
+  .navbar-nav {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+  }
+  
+  /* Navbar link styling */
+  .nav-link {
+    color: #f8f9fa; /* Light text color */
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 5px; /* Adds a slight curve to the background */
+    position: relative; /* Allows background color transition */
+    z-index: 1;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a subtle light background on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* For a sleek underline hover effect */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* White underline */
+    transition: width 0.3s ease; /* Transition for underline */
+    z-index: 0;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Expands underline on hover */
+  }
+  
+  /* Custom button in the navbar */
+  .nav-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #f8f9fa;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  
+  .nav-btn:hover {
+    background-color: #ffffff;
+    color: #343a40;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2); /* Soft shadow for button */
+  }
+  
+  /* Mobile view adjustments */
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  @media (max-width: 602px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .nav-link {
+      margin: 0.5rem 0;
+    }
+  
+    .nav-btn {
+      margin: 1rem 0;
+    }
+  }
+  

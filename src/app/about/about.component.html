@@ -1,0 +1,100 @@
+<div>
+<h1 class="h1"></h1>
+<h2 class="h2">About us </h2>
+<h3 class="home">Home</h3>
+<h3 class="about">About</h3>
+</div>
+
+<p class="what">WHAT WE DO </p>
+<h1 class="Services"> OUR SERVICES</h1>
+
+<div class="row">
+    <div class="column">
+      <h3>Latest Movie Releases</h3>
+      <p> Stay updated with the newest releases and trending movies worldwide. From blockbusters to indie films, we bring you the latest in cinema.</p>
+    </div>
+
+    <div class="column">
+      <h3>Movie Reviews and Ratings
+      </h3>
+      <p>Get honest, in-depth reviews and ratings from both critics and viewers to help you choose your next movie experience.</p>
+    </div>
+
+    <div class="column">
+      <h3>Trailers and Sneak Peeks
+      </h3>
+      <p>Discover movies tailored to your taste. Our recommendation engine suggests films based on your interests and past favorites.</p>
+    </div>
+
+    <div class="column">
+      <h3>Curated Movie Collections
+
+      </h3>
+      <p>Watch trailers, teasers, and exclusive sneak peeks to get a feel for upcoming movies and decide which ones to add to your watchlist</p>
+    </div>
+
+    <div class="column">
+      <h3>Personalized Recommendations
+      </h3>
+      <p>Explore our curated lists of popular genres, top-rated films, classics, and hidden gems to find your next binge-worthy watch.</p>
+    </div>
+
+    <div class="column">
+      <h3>Showtimes and Theater Booking
+      </h3>
+      <p>Check showtimes, find nearby theaters, and book your tickets with ease. Experience the big screen like never before.</p>
+    </div>
+  </div>  
+
+
+  <div>
+<P style="background-color: rgb(0, 0, 0);margin-top: 100px; padding-top: 900px;"></P>
+
+<P style="color: rgb(255, 203, 91); margin-top: -800px; text-align: center; font-size: 20px; font-family:'Times New Roman', Times, serif;">THIS WEEK</P>
+
+<P style="color: rgb(255, 254, 254); text-align: center; font-size: 50px; font-family:'Times New Roman', Times, serif;"> OUR UPCOMING MOVIES</P>
+
+
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let card of AboutCOmponent">
+        <div class="card mb-4">
+          <img [src]="card.image" class="card-img-top" alt="{{ card.title }}">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<div>
+<p style=" font-size:20px ; margin-top: 300px; text-align: center; font-family:'Times New Roman', Times, serif; font-weight: 600; color: rgb(214, 129, 0);">FEATURES</p>
+
+<p style="font-size: 50px; text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600; color: rgb(0, 0, 0);">WHY CHOOSE US</p>
+
+<div class="container-fluid mt-4">
+    <div class="row" >
+      <div class="col-md-4">
+        <div class="card mb-4">
+        <img class="images" src="https://cdn.prod.website-files.com/634e7aa49f5b025e1fd9e87b/65203a32ba0cf162205f662b_videographer-shooting-a-scene.jpeg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+        <img class="images" src="https://images.squarespace-cdn.com/content/v1/5cccaa32fac66e0001443002/f067a0da-9e5d-4043-a010-348b9dfd05a4/JJSHOTME_6706.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+        <img class="images" src="https://www.usmagazine.com/wp-content/uploads/2020/09/Who-Is-Paul-Mescal-5-Things-Know-About-Normal-People-Star-Landing.jpg?quality=86&strip=all" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<app-footer></app-footer>

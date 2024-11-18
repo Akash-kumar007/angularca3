@@ -1,0 +1,12 @@
+<h1>POPULAR</h1>
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let card of CardsComponent">
+        <div class="card mb-4">
+          <a [href]="card.link" target="_blank">
+          <img [src]="card.image" class="card-img-top" alt="{{ card.title }}">
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>

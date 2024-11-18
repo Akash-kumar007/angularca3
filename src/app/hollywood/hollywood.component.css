@@ -1,0 +1,17 @@
+
+
+.card-img-top{
+    height: 340px;
+    width: 250px;
+}
+
+.card {
+    margin-top: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 8px 26px rgba(0, 0, 0, 0.5);
+  }
+  
